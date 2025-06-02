@@ -1,0 +1,385 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #faddea;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #AA336A;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #74274b;
+    border-radius: 5px;
+}
+
+nav a.active {
+    background-color: #74274b;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    color: #74274b;
+}
+
+.recipe-intro-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.recipe-image-container {
+    flex: 0 0 55%;
+    max-width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recipe-image {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.recipe-intro {
+    flex: 0 0 50%;
+    max-width: 50%;
+    background-color: #fff;
+    border: 2px solid #AA336A;
+    padding: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.recipe-details {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.ingredients, .preparation, .tips {
+    width: calc(32% - 20px);
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #AA336A;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ingredients:hover, .preparation:hover, .tips:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.ingredients h2, .preparation h2, .tips h2 {
+    color: #AA336A;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.ingredients ul, .tips ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    flex-grow: 1;
+}
+
+.preparation ol {
+    padding-left: 20px;
+    flex-grow: 1;
+}
+
+.ingredients li, .preparation li, .tips li {
+    color: #333;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.country-link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 220px;
+    margin: 10px;
+}
+
+.country-image {
+    width: 100%;
+    height: 140px;
+    border: 2px solid #74274b;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    aspect-ratio: 3/2;
+}
+
+.country-image:hover {
+    animation: bounce 0.5s infinite alternate;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-10px);
+    }
+}
+
+.country-name {
+    font-size: 22px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 900;
+    color: #222;
+    text-align: center;
+    margin-top: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.country-name:hover {
+    color: #AA336A;
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #331624;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.recipe-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.recept {
+    background-color: #ffccd5;
+    border: 2px solid #d6336c;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    display: block;
+    box-sizing: border-box;
+}
+
+.recept:hover {
+    transform: scale(1.05);
+}
+
+.recept h2 {
+    color: #d6336c;
+    font-size: 24px;
+    margin: 0;
+}
+
+.recept p {
+    color: #74274b;
+    font-size: 16px;
+    margin: 10px 0 0 0;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column; /* Zorgt ervoor dat de secties onder elkaar staan */
+    align-items: center;
+    gap: 30px; /* Ruimte tussen de secties */
+    padding: 20px;
+}
+
+.logo-section {
+    text-align: center;
+}
+
+.logo {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-us, .mission, .community, .explore {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.about-us h2, .mission h2, .community h2, .explore h2 {
+    color: #AA336A;
+    margin-bottom: 15px;
+}
+
+.about-us p, .mission p, .community p, .explore p {
+    color: #333;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .recipe-intro-container {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .recipe-image-container {
+        max-width: 100%;
+    }
+
+    .recipe-image {
+        max-width: 100%;
+    }
+
+    .recipe-intro {
+        max-width: 100%;
+    }
+
+    .recipe-details {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .ingredients, .preparation, .tips {
+        width: 100%;
+    }
+
+    .country-link {
+        width: 160px;
+    }
+
+    .country-image {
+        height: 100px;
+    }
+}
+
+@media (min-width: 768px) {
+    .about-content {
+        flex-direction: column; /* Zorgt ervoor dat de secties onder elkaar staan */
+        align-items: center; /* Optioneel: centreert de secties */
+        gap: 30px; /* Ruimte tussen de secties */
+    }
+
+    .logo-section {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-us, .mission, .community, .explore {
+        width: 100%; /* Zorgt ervoor dat de secties de volledige breedte gebruiken */
+    }
+}
+
+@media (min-width: 1024px) {
+    .about-content {
+        flex-wrap: nowrap;
+    }
+
+    .logo-section {
+        width: auto;
+    }
+
+    .about-us, .mission, .community, .explore {
+        width: auto;
+    }
+}

@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    flex-wrap: wrap;
+}
+
+header {
+    color: #f0f0f0;
+    margin-left: -15vw;
+    margin-right: -15vw;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(2, 81, 91);
+    font-size: 15px;
+    color: #f0f0f0;
+}
+
+nav {
+    background-color: darkcyan;
+    text-align: center;
+    padding: 30px;
+    color: #f0f0f0;
+    margin-left: -15vw;
+    margin-right: -15vw;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    background-color: rgb(2, 81, 91);
+    border-radius: 15%;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sections {
+    flex: 1;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+#gakpo {
+    max-width: 100%;
+    max-height: 600px;
+    padding-top: 20px;
+}
+
+#eredivisie{
+    max-width: 100%;
+    max-height: 70%;
+    padding-top: 20px;
+}
+
+#cups{
+    max-width: 100%;
+    max-height: 70%;
+    padding-top: 20px;
+}
+
+#belgen{
+    max-width: 100%;
+    max-height: 70%;
+    padding-top: 20px;
+}
+
+aside {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 10px 0;
+    width: 20%;
+}
+
+footer{
+    background-color: rgb(2, 81, 91);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+    justify-content: center;
+    text-align: center;
+    height: 3em;
+    align-content: center;
+    color: #f0f0f0;
+    width: 100%;
+}
